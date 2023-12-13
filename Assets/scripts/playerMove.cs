@@ -6,8 +6,8 @@ using UnityEngine.InputSystem;
 public class playerMove : MonoBehaviour
 {
     Animator animator;
-    Rigidbody Rigidbodyrb;
     Transform Playertransform;
+    CharacterController characterController;
     //用于解决手柄等误触造成的不必要的移动，即超过这个阈值再进行移动
     float threshold = 0.1f;
     //玩家输入
@@ -28,7 +28,7 @@ public class playerMove : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        Rigidbodyrb = GetComponent<Rigidbody>();
+        characterController = GetComponent<CharacterController>();
         Playertransform = transform;
     }
 
@@ -42,6 +42,7 @@ public class playerMove : MonoBehaviour
     private void OnAnimatorMove()
     {
         Move();
+        characterController.SimpleMove(animator.velocity);
     }
 
     public void getPlayerWalkInput(InputAction.CallbackContext ctx)
@@ -91,8 +92,8 @@ public class playerMove : MonoBehaviour
         //transform.position+=movement;
         animator.SetFloat("speed", currentSpeed);
         //由于每次调用OnAnimatorMove都会调用move函数，导致y分量的速度始终为定值，我们需要保留y值，这样才会下落越来越快。
-        Vector3 vector3 = new Vector3(animator.velocity.x, Rigidbodyrb.velocity.y, animator.velocity.z);
-        Rigidbodyrb.velocity = vector3;
+        //Vector3 vector3 = new Vector3(animator.velocity.x, Rigidbodyrb.velocity.y, animator.velocity.z);
+        //Rigidbodyrb.velocity = vector3;
     }
     public void PlayerHandMove(InputAction.CallbackContext ctx)
     {
