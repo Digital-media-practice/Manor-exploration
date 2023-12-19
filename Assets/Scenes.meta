@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream:Assets/Scenes.meta
 guid: 901087faff3909141ad22fe815a47989
+=======
+guid: 454d22c7a873ae445b892094771012d2
+>>>>>>> Stashed changes:Assets/animatorCon角色动画.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

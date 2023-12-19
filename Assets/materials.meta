@@ -1,7 +1,18 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
+<<<<<<<< Updated upstream:Assets/materials.meta
 guid: 85d5479fe3ddc1d44afc753aea94c9b4
 folderAsset: yes
 DefaultImporter:
+========
+guid: 65475cdf8c674a143a7ab3db399ee708
+NativeFormatImporter:
+>>>>>>>> Stashed changes:Assets/animatorCon角色动画/playerAnCon.controller.meta
+=======
+guid: bb4e704ea9eed6145a039a7e32f800f3
+folderAsset: yes
+DefaultImporter:
+>>>>>>> Stashed changes
   externalObjects: {}
   userData: 
   assetBundleName: 
