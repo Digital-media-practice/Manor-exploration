@@ -61,3 +61,5 @@ YR
    ![image-20231221223824968](https://yrain11.oss-cn-hangzhou.aliyuncs.com/pictures/202312212238257.png)
 
 3. speedtree材质转换：还在探索当中
+
+3. 引用了Unity资源商店的Realistic Tree 9 [Rainbow Tree]资源
