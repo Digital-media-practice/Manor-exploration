@@ -36,10 +36,28 @@
 
 ---
 
-2023/12/3
+**2023/12/3**
 
 YR
 
-添加了资源包：Dream Forest Tree
+## 添加了资源包：Dream Forest Tree
 
 [Dream Forest Tree | 3D 树木 | Unity Asset Store](https://assetstore.unity.com/packages/3d/vegetation/trees/dream-forest-tree-105297)
+
+进入资源包的urp patch文件夹，双击DreamTreesURP,即可去除粉色材质
+
+## 添加了资源包：Sci-Fi Styled Modular Pack
+
+[Sci-Fi Styled Modular Pack | 3D 科幻 | Unity Asset Store](https://assetstore.unity.com/packages/3d/environments/sci-fi/sci-fi-styled-modular-pack-82913#reviews)
+
+材质球更改方法：
+
+1. 筛选出project项目窗口下的材质球
+
+![image-20231221223638076](https://yrain11.oss-cn-hangzhou.aliyuncs.com/pictures/202312212236240.png)
+
+2. 将材质转换到urp,不是手写的shader都可以这么转
+
+   ![image-20231221223824968](https://yrain11.oss-cn-hangzhou.aliyuncs.com/pictures/202312212238257.png)
+
+3. speedtree材质转换：还在探索当中
