@@ -33,3 +33,13 @@
    ![image-20231203121433135](https://yrain11.oss-cn-hangzhou.aliyuncs.com/pictures/202312031214257.png)
 
 2. 人物模型的确定。
+
+---
+
+2023/12/3
+
+YR
+
+添加了资源包：Dream Forest Tree
+
+[Dream Forest Tree | 3D 树木 | Unity Asset Store](https://assetstore.unity.com/packages/3d/vegetation/trees/dream-forest-tree-105297)
