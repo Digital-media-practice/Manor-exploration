@@ -2,6 +2,12 @@
 
 # 说明：
 
+给zt：在提交之前先更新
+
+![image-20231225213310633](https://yrain11.oss-cn-hangzhou.aliyuncs.com/pictures/202312252133996.png)
+
+![image-20231225213336139](https://yrain11.oss-cn-hangzhou.aliyuncs.com/pictures/202312252133203.png)
+
 **这里主要记录更新时间和更新内容：落款为时间和姓名缩写**
 
 ***
@@ -62,4 +68,23 @@ YR
 
 3. speedtree材质转换：还在探索当中
 
-3. 引用了Unity资源商店的Realistic Tree 9 [Rainbow Tree]资源
+---
+
+**2023/12/25**
+
+更新内容如下：
+
+1. 更新了场景1.0，同步到了main分支和develop分支
+
+2. 添加了资源包：
+
+   GrassFlowers:[Grass Flowers Pack Free | 2D 自然 | Unity Asset Store](https://assetstore.unity.com/packages/2d/textures-materials/nature/grass-flowers-pack-free-138810)
+
+   simple water:[Simple Water Shader URP | 2D 水 | Unity Asset Store](https://assetstore.unity.com/packages/2d/textures-materials/water/simple-water-shader-urp-191449)
+
+   bridges pack:[Bridges Pack | 3D 道具 | Unity Asset Store](https://assetstore.unity.com/packages/3d/props/bridges-pack-212950)
+
+   terrain sample asset pack:[Terrain Sample Asset Pack | 3D 风景 | Unity Asset Store](https://assetstore.unity.com/packages/3d/environments/landscapes/terrain-sample-asset-pack-145808)
+
+   
+
