@@ -15,11 +15,11 @@ public class PlayerController : MonoBehaviour
     bool isRunning;
     Vector2 moveInput;
     int speedHash;
-    Vector3 playerMovement= Vector3.zero;
-    Vector3 move;
+    Vector3 playerMovement = Vector3.zero;
+    float rad;
     #endregion
     // Start is called before the first frame update
-   
+
     void Start()
     {
         controller= GetComponent<CharacterController>();
@@ -39,8 +39,8 @@ public class PlayerController : MonoBehaviour
     private void OnAnimatorMove()
     {
         
-        controller.Move(animator.deltaPosition);
-        
+        controller.SimpleMove(animator.velocity);
+        playerTransform.Rotate(0, rad * 1800 * Time.deltaTime, 0f);
     }
     #region 输入相关
     public void GetMoveInput(InputAction.CallbackContext ctx)
@@ -55,7 +55,7 @@ public class PlayerController : MonoBehaviour
 
     void playerMove()
     {
-        if (moveInput.magnitude == 0)
+        if (moveInput.magnitude == 0f)
         {
             animator.SetFloat(speedHash,0,0.1f,Time.deltaTime);
         }else if (!isRunning)
@@ -66,8 +66,8 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetFloat(speedHash, runSpeed, 0.1f, Time.deltaTime);
         }
-        float rad = Mathf.Atan2(playerMovement.x, playerMovement.z);
-        playerTransform.Rotate(0, rad * 180 * Time.deltaTime,0f);
+        rad = Mathf.Atan2(playerMovement.x, playerMovement.z);
+        
     }
 
     void CaculateInputDirection()//实时获得相机方向
