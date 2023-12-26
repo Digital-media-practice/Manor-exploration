@@ -2,11 +2,13 @@
 
 # 说明：
 
-给zt：在提交之前先更新
+给zt：在提交之前先更新。
 
 ![image-20231225213310633](https://yrain11.oss-cn-hangzhou.aliyuncs.com/pictures/202312252133996.png)
 
 ![image-20231225213336139](https://yrain11.oss-cn-hangzhou.aliyuncs.com/pictures/202312252133203.png)
+
+![image-20231226232752714](https://yrain11.oss-cn-hangzhou.aliyuncs.com/pictures/202312262327050.png)
 
 **这里主要记录更新时间和更新内容：落款为时间和姓名缩写**
 
@@ -109,3 +111,7 @@ YR
 在以下路径可以看的树的预制件：
 
 ![image-20231226202802930](https://yrain11.oss-cn-hangzhou.aliyuncs.com/pictures/202312262028034.png)
+
+4. 更新资源包：Quick Outline
+
+   [Quick Outline | Particles/Effects | Unity Asset Store](https://assetstore.unity.com/packages/tools/particles-effects/quick-outline-115488)

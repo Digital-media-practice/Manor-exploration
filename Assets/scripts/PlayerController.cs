@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
     {
         
         controller.SimpleMove(animator.velocity);
-        playerTransform.Rotate(0, rad * 1800 * Time.deltaTime, 0f);
+        playerTransform.Rotate(0, rad * 300 * Time.deltaTime, 0f);
     }
     #region  ‰»Îœ‡πÿ
     public void GetMoveInput(InputAction.CallbackContext ctx)
@@ -77,6 +77,8 @@ public class PlayerController : MonoBehaviour
         playerMovement = camForwardProjection * moveInput.y + cameraTransform.right * moveInput.x;
         playerMovement = playerTransform.InverseTransformVector(playerMovement);
     }
+
+ 
 
 
 }
