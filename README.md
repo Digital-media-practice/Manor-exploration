@@ -88,3 +88,24 @@ YR
 
    
 
+---
+
+**2023/12/26**
+
+更新：
+
+1. 更新了角色移动
+
+2. 删除了资源包[Dream Forest Tree | 3D 树木 | Unity Asset Store](https://assetstore.unity.com/packages/3d/vegetation/trees/dream-forest-tree-105297)
+
+3. 使用了资源包：Conifers [BOTD]
+
+   [Conifers [BOTD\] | 3D 树木 | Unity Asset Store](https://assetstore.unity.com/packages/3d/vegetation/trees/conifers-botd-142076#content)
+
+   下载资源包后：双击并导入这两个资源包
+
+   ![image-20231226202619429](https://yrain11.oss-cn-hangzhou.aliyuncs.com/pictures/202312262026619.png)
+
+在以下路径可以看的树的预制件：
+
+![image-20231226202802930](https://yrain11.oss-cn-hangzhou.aliyuncs.com/pictures/202312262028034.png)
