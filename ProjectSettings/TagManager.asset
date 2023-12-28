@@ -8,6 +8,8 @@ TagManager:
   - "\u573A\u666F"
   - post
   - "\u53EF\u4EA4\u4E92"
+  - "\u51FA\u751F\u70B9"
+  - GameControl
   layers:
   - Default
   - TransparentFX
