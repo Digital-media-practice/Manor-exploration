@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     int speedHash;
     Vector3 playerMovement = Vector3.zero;
     float rad;
+    float angle;
     #endregion
     // Start is called before the first frame update
 
@@ -46,6 +47,8 @@ public class PlayerController : MonoBehaviour
     public void GetMoveInput(InputAction.CallbackContext ctx)
     {
         moveInput=ctx.ReadValue<Vector2>();
+        Debug.Log(moveInput);
+        
     }
     public void GetRunInput(InputAction.CallbackContext ctx)
     {
@@ -67,7 +70,9 @@ public class PlayerController : MonoBehaviour
             animator.SetFloat(speedHash, runSpeed, 0.1f, Time.deltaTime);
         }
         rad = Mathf.Atan2(playerMovement.x, playerMovement.z);
-        
+        angle = getAngel(rad);
+        forward();
+        rad = getRad(angle);
     }
 
     void CaculateInputDirection()//实时获得相机方向
@@ -77,8 +82,33 @@ public class PlayerController : MonoBehaviour
         playerMovement = camForwardProjection * moveInput.y + cameraTransform.right * moveInput.x;
         playerMovement = playerTransform.InverseTransformVector(playerMovement);
     }
+    float getRad(float Angel)
+    {
+        float Rad = Angel * Mathf.PI / 180;
+        return Rad;
+    }
+    float getAngel(float Rad)
+    {
+        float Angle = Rad * (180 / Mathf.PI);
+        return Angle;
+    }
 
- 
+    void forward()
+    {
+        if (moveInput.x == 0 && moveInput.y == -1)
+        {
+            rad = rad + 90;
+        }
+        else if(moveInput.x == 1 && moveInput.y == 0)
+        {
+            rad = rad + 45;
+        }
+        else if (moveInput.x == -1 && moveInput.y == 0)
+        {
+            rad = rad - 45;
+        }
+    }
+
 
 
 }
