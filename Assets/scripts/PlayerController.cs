@@ -18,19 +18,33 @@ public class PlayerController : MonoBehaviour
     Vector3 playerMovement = Vector3.zero;
     float rad;
     float angle;
+
+    private playerSpawn SpawnControl;
     #endregion
     // Start is called before the first frame update
-
+    private void Awake()
+    {
+        SpawnControl = GameObject.FindGameObjectWithTag("GameControl").GetComponent<playerSpawn>();
+        
+    }
     void Start()
     {
         controller= GetComponent<CharacterController>();
+        controller.enabled = false;
         animator = GetComponent<Animator>();
         playerTransform = transform;
         speedHash = Animator.StringToHash("speed");
         cameraTransform=Camera.main.transform;
         Cursor.lockState = CursorLockMode.Locked;
+        SpawnPlayer();
+ 
     }
-
+    void SpawnPlayer()
+    {
+        
+        playerTransform.position = SpawnControl.getSpawn(0).transform.position;
+        controller.enabled= true;
+    }
     // Update is called once per frame
     void Update()
     {
