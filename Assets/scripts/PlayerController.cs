@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     Vector3 playerMovement = Vector3.zero;
     float rad;
     float angle;
+    public int keys;
 
     private playerSpawn SpawnControl;
     #endregion
@@ -35,9 +36,15 @@ public class PlayerController : MonoBehaviour
         playerTransform = transform;
         speedHash = Animator.StringToHash("speed");
         cameraTransform=Camera.main.transform;
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked;
         SpawnPlayer();
+        keys = 0;
  
+    }
+    public void getKey()
+    {
+        keys++;
+        Debug.Log("当前收取了" + keys + "钥匙");
     }
     void SpawnPlayer()
     {

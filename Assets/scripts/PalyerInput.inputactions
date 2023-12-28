@@ -112,6 +112,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "ui",
+            "id": "a89af841-1952-452a-ab0a-507b9043f783",
+            "actions": [
+                {
+                    "name": "弹出鼠标",
+                    "type": "Button",
+                    "id": "5a731a31-41c7-4c37-a81c-567a1131b4f1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "deb41455-5a1b-4151-bac2-9c9e3fcd39ef",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "弹出鼠标",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [

@@ -10,6 +10,7 @@ TagManager:
   - "\u53EF\u4EA4\u4E92"
   - "\u51FA\u751F\u70B9"
   - GameControl
+  - ui
   layers:
   - Default
   - TransparentFX
@@ -17,8 +18,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - "\u95E8"
+  - "\u9053\u5177"
   - 
   - 
   - 
