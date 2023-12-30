@@ -20,7 +20,8 @@ public class getkeys : MonoBehaviour
     }
    public void addkey()
     {
-        player.gameObject.GetComponent<PlayerController>().getKey();
+        GameObject.Find("GameData").GetComponent<GameData>().param++;
+        //player.gameObject.GetComponent<PlayerController>().getKey();
         Transform[] myTransforms = GetComponentsInChildren<Transform>();
         foreach (var child in myTransforms)
         {

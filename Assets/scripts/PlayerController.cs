@@ -27,10 +27,12 @@ public class PlayerController : MonoBehaviour
     {
         SpawnControl = GameObject.FindGameObjectWithTag("GameControl").GetComponent<playerSpawn>();
         
+
     }
     void Start()
     {
-        controller= GetComponent<CharacterController>();
+        keys=GameObject.Find("GameData").GetComponent<GameData>().param ;
+        controller = GetComponent<CharacterController>();
         controller.enabled = false;
         animator = GetComponent<Animator>();
         playerTransform = transform;
@@ -38,7 +40,7 @@ public class PlayerController : MonoBehaviour
         cameraTransform=Camera.main.transform;
         //Cursor.lockState = CursorLockMode.Locked;
         SpawnPlayer();
-        keys = 0;
+        
  
     }
     public void getKey()
@@ -55,6 +57,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         playerMove();
         CaculateInputDirection();
     }
