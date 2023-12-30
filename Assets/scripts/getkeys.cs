@@ -32,12 +32,14 @@ public class getkeys : MonoBehaviour
     {
         if (player.gameObject.GetComponent<PlayerController>().keys == 3)
         {
-            
+            Debug.Log("结束");
+
             for (int i = 0; i < uis.Length; i++)
             {
 
                 if (uis[i].name == "结束界面")
                 {
+                    Debug.Log("结束");
                     uis[i].gameObject.SetActive(true);
             
                     Time.timeScale = 0;
