@@ -31,7 +31,8 @@ public class PlayerController : MonoBehaviour
     }
     void Start()
     {
-        keys=GameObject.Find("GameData").GetComponent<GameData>().param ;
+         
+        
         controller = GetComponent<CharacterController>();
         controller.enabled = false;
         animator = GetComponent<Animator>();
@@ -57,7 +58,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        keys = GameObject.Find("GameData").GetComponent<GameData>().param;
         playerMove();
         CaculateInputDirection();
     }
@@ -71,7 +72,7 @@ public class PlayerController : MonoBehaviour
     public void GetMoveInput(InputAction.CallbackContext ctx)
     {
         moveInput=ctx.ReadValue<Vector2>();
-        Debug.Log(moveInput);
+        
         
     }
     public void GetRunInput(InputAction.CallbackContext ctx)
